@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Ragav S - Software Developer Portfolio</title>
+    <meta name="description" content="Portfolio of  Hari Ragav S - Aspiring Software Developer specializing in web development and modern technologies">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" style="font-weight:800; font-size:2rem; letter-spacing:2px; color:#6C63FF;">HARI RAGAV S</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#timeline" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#education-skills" class="nav-link">Education & Skills</a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/hari-ragav-saminathan-8592a8349/" class="nav-link" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li class="nav-item"><a href="https://github.com/raven-max3006" class="nav-link" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li class="nav-item"><button class="theme-toggle" id="theme-toggle"><i class="fas fa-sun"></i></button></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">HARI RAGAV S</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Enthusiastic Computer Science student at IIIT Sri City, passionate about Full-Stack Development and AI/ML. I build scalable apps, experiment with intelligent systems, and love creative design. Always seeking to innovate and solve real-world problems with technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="assets/resume.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content" style="display: flex; align-items: center; gap: 2.5rem;">
+                <div class="about-image" style="flex:0 0 320px;display:flex;justify-content:flex-start;align-items:center;">
+                    <a href="https://www.linkedin.com/in/hari-ragav-saminathan-8592a8349/" target="_blank">
+                        <img src="images/hari.JPG" alt="Profile Picture" class="profile-img" style="margin:0;cursor:pointer;transition:transform 0.3s;">
+                    </a>
+                </div>
+                <div class="about-text" style="flex:1;">
+                    <p class="about-description">
+                        Hello! I'm Hari Ragav S, an enthusiastic and driven Computer Science student currently pursuing my B.Tech in Computer Science and Engineering at the Indian Institute of Information Technology, Sri City.<br><br>
+                        I have a strong interest in Full-Stack Development and Artificial Intelligence/Machine Learning, with hands-on experience in building scalable applications and experimenting with intelligent systems. Over time, I’ve explored projects ranging from developing a Community Sports Management Platform (SportsAmigo), creating engaging portfolio websites, to designing interactive bubble-themed games in Unity for hackathons. I’m also working on a Human Action Interaction project using the Charades dataset, where I integrate deep learning, transformers, and video processing for smart caption generation.<br><br>
+                        Beyond coding, I actively explore design and creativity, contributing as a Design Team Core at Nexsync and collaborating on visual storytelling, user interfaces, and interactive experiences.<br><br>
+                        I am passionate about solving real-world problems with technology—whether it’s through web technologies like Node.js, MongoDB, React, or AI/ML frameworks for computer vision and natural language processing. I thrive in dynamic team environments and am constantly seeking opportunities to learn, innovate, and create impactful solutions.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>4+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2+ years</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/raven-max3006" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/hari-ragav-saminathan-8592a8349/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:hariragavs@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+<section id="resume" class="resume section">
+    <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-content">
+            <div class="resume-preview" style="text-align:center;">
+                <!-- Embed PDF directly from your assets folder -->
+                <div class="resume-frame" style="border:1px solid #ddd; border-radius:8px; overflow:hidden; margin-bottom:20px;">
+                    <iframe 
+                        src="assets/resume.pdf" 
+                        width="100%" 
+                        height="600px" 
+                        style="border:none;" 
+                        title="Resume PDF">
+                    </iframe>
+                </div>
+                
+                <!-- Buttons for viewing and downloading -->
+                <div class="resume-actions" style="display:flex; justify-content:center; gap:15px;">
+                    <a href="assets/resume.pdf" class="btn btn-primary" target="_blank" style="padding:10px 20px; text-decoration:none; border-radius:5px; background-color:#007bff; color:white; font-weight:bold;">
+                        <i class="fas fa-eye"></i> View Online
+                    </a>
+                    <a href="assets/resume.pdf" class="btn btn-outline" download style="padding:10px 20px; text-decoration:none; border-radius:5px; border:2px solid #007bff; color:#007bff; font-weight:bold;">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Education & Technical Skills Section -->
+        <section id="education-skills" class="education-skills section">
+            <div class="container">
+                <h2 class="section-title">Education & Technical Skills</h2>
+                <!-- Education Section -->
+                <div class="education">
+                    <h3 class="sub-title">Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Indian Institute of Information Technology, Sri City</h4>
+                            <span class="timeline-date">2023 – 2027</span>
+                            <p><strong>B.Tech, Computer Science & Engineering</strong></p>
+                            <p>CGPA: <strong>9.5 / 10</strong></p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Edison G Agoram Memorial School</h4>
+                            <span class="timeline-date">2021 – 2023</span>
+                            <p><strong>Higher Secondary Education</strong></p>
+                            <p>CGPA: <strong>9.4 / 10</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Technical Skills Section -->
+                <div class="skills">
+                    <h3 class="sub-title">Technical Skills</h3>
+                    <ul class="skills-list">
+                        <li><strong>Web Development:</strong> HTML, CSS, JavaScript, Node.js, MongoDB</li>
+                        <li><strong>Machine Learning:</strong> Python, TensorFlow/Keras, YOLOv8, Transformers</li>
+                        <li><strong>Programming & CS Fundamentals:</strong> Data Structures & Algorithms, OOPs, DBMS</li>
+                        <li><strong>Version Control:</strong> Git, GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid" id="projects-grid" style="display: grid; gap: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); justify-items: center;">
+                <!-- Web Development -->
+                <div class="project-card glass-card" style="position:relative;overflow:hidden;">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#ff512f,#dd2476);">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>SportsAmigo</h3>
+                    <p><strong>Description:</strong> Community Sports Management Platform to create events, manage teams, and view schedules.</p>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JS, Node.js, MongoDB</p>
+                    <p><strong>Links:</strong> <a href="#" target="_blank">GitHub</a> / <a href="#" target="_blank">Demo</a></p>
+                </div>
+                <!-- Machine Learning -->
+                <div class="project-card glass-card" style="position:relative;overflow:hidden;">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#43e97b,#38f9d7);">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Human Action Interaction (Charades Dataset)</h3>
+                    <p><strong>Description:</strong> Video captioning system using YOLOv8, CNN feature extraction, and transformer-based decoding.</p>
+                    <p><strong>Tech Stack:</strong> Python, TensorFlow/Keras, YOLOv8, Google Colab</p>
+                    <p><strong>Links:</strong> <a href="#" target="_blank">GitHub</a> / <a href="#" target="_blank">Video Demo</a></p>
+                </div>
+                <!-- Bubbleverse Explorer -->
+                <div class="project-card glass-card" style="position:relative;overflow:hidden;">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#26d0ce,#1a2980);">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Bubbleverse Explorer (AI-Enhanced Gameplay)</h3>
+                    <p><strong>Description:</strong> Rhythm-based bubble game with AI-powered environment interactions.</p>
+                    <p><strong>Tech Stack:</strong> Unity 3D, C#, Physics, Music Integration</p>
+                    <p><strong>Links:</strong> <a href="#" target="_blank">GitHub</a> / <a href="#" target="_blank">Playable Demo</a></p>
+                </div>
+                <!-- Design -->
+                <div class="project-card glass-card" style="position:relative;overflow:hidden;">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#11998e,#38ef7d);">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Portfolio & E-Portfolio Website</h3>
+                    <p><strong>Description:</strong> Personal portfolio website showing skills, projects, resume, and timeline of experiences.</p>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JS, Bootstrap / Tailwind (or Figma for mockups)</p>
+                    <p><strong>Links:</strong> <a href="#" target="_blank">GitHub</a> / <a href="#" target="_blank">Live Site</a></p>
+                </div>
+                 <div class="project-card glass-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:180px;">
+                                <div class="project-icon" style="background:linear-gradient(135deg,#FFD600,#FF6584);">
+                                    <i class="fas fa-hourglass-half"></i>
+                                </div>
+                                <h3>More Projects Coming Soon</h3>
+                                <p>I'm constantly working on new projects and learning new technologies.<br>Check back soon for more exciting developments!</p>
+                            </div>                           
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline-container">
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-content">
+                        <h3>Full-Stack Developer – SportsAmigo (IIIT Sri City Project)</h3>
+                        <p>Developed a Community Sports Management Platform with features like event scheduling, team management, and player dashboards. Worked on backend with Node.js and MongoDB, and built responsive frontend interfaces.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2025">
+                    <div class="timeline-content">
+                        <h3>AI/ML Research Developer – Human Action Interaction Project</h3>
+                        <p>Worked on video captioning and human activity recognition using the Charades dataset. Implemented a pipeline with YOLOv8 for object detection, CNNs for feature extraction, and transformers for caption generation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-content">
+                        <h3>Game Developer – Global Game Jam (Bubbleverse Explorer)</h3>
+                        <p>Designed and developed a 3D Unity-based game within 35 hours for the Global Game Jam. Focused on physics-based mechanics, interactive gameplay, and engaging visuals.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-content">
+                        <h3>Hackathon Participant – Station-S Hackathon (Track 2: Intelligent Document Management)</h3>
+                        <p>Collaborated with a team to design a scalable prototype for intelligent document parsing, storage, and search using ML/NLP techniques.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2025">
+                    <div class="timeline-content">
+                        <h3>Design Team Core – Nexsync</h3>
+                        <p>Contributed to design and technical initiatives for club activities and events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. 
+                       Feel free to reach out if you'd like to collaborate or just say hello!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+
+                            <i class="fas fa-envelope"></i>
+                            <span>ragavhiiit@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9345634475</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Chennai, Tamil Nadu</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <div class="contact-message" id="contact-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>HARI RAGAV S</h3>
+                    <p>Full-Stack Developer & AI/ML Enthusiast</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/raven-max3006" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hari-ragav-saminathan-8592a8349/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:hariragavs@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HARI RAGAV S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
